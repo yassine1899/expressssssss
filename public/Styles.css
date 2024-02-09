@@ -1,0 +1,227 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"); */
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top, #424170, #b0edf1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: #000033;
+}
+.NavBar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(89, 3, 3, 0.418);
+  box-shadow: 0 0 35px black;
+  position: sticky;
+  top: 0;
+  margin: auto;
+  z-index: 1;
+  transition: width 0.3s, border-radius 0.3s ease;
+}
+#logo {
+  font-family: "Pacifico", cursive;
+  font-size: 45px;
+  transition: filter 0.5s, transform 0.3s;
+}
+#logo:hover {
+  filter: drop-shadow(0 0 10px rgb(2, 2, 2));
+  transform: scale(1.05);
+}
+.NavBar a {
+  text-decoration: none;
+  color: white;
+}
+.NavBar h1 {
+  color: white;
+  padding: 10px 30px;
+  font-size: xx-large;
+}
+.NavLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.NavLinks a {
+  border-radius: 30px;
+  padding: 10px;
+  font-size: large;
+  transition: background-color 0.3s, color 0.4s;
+}
+.NavLinks a:hover {
+  background-color: white;
+  color: black;
+}
+
+.hero {
+  background-image: url("https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: -10vh 0 10vh 0;
+}
+.heroContents {
+  height: 90%;
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+.heroContents p {
+  font-size: x-large;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 85vh;
+  position: relative;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  width: 65%;
+  min-height: 60vh;
+  background-color: rgba(145, 213, 218, 0.164);
+  border-radius: 10px;
+  font-size: large;
+  box-shadow: 0px 50px 40px -20px rgba(50, 50, 93, 0.25),
+    0px 30px 40px -30px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+}
+
+.contents div {
+  width: 60%;
+}
+p {
+  font-size: larger;
+}
+section {
+  width: 82%;
+  min-height: 50vh;
+  padding: 3%;
+  margin: 2% 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 50px 40px -20px rgba(50, 50, 93, 0.25),
+    0px 30px 40px -30px rgba(0, 0, 0, 0.3),
+    inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+  background-color: rgba(51, 199, 180, 0.596);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+ section div {
+  width: 35vw;
+}
+.left {
+  margin-left: 10%;
+  margin-right: auto;
+  justify-content: right;
+}
+.right {
+  margin-left: auto;
+  margin-right: 10%;
+  justify-content: left;
+}
+section:hover {
+  width: 80%;
+} 
+
+#firstImg {
+  position: absolute;
+  height: 85%;
+  width: 33vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.left #firstImg {
+  left: 3%;
+}
+.right #firstImg {
+  right: 3%;
+}
+section:hover #firstImg {
+  visibility: visible;
+  opacity: 1;
+}
+.service {
+  width: 75%;
+  min-height: 20vh;
+  padding: 2% 10%;
+  margin: 2% 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+  background-image: radial-gradient(
+    circle,
+    rgba(145, 213, 218, 0.596) 40%,
+    transparent 100%
+  );
+}
+.contactUs {
+  margin: 3% 5%;
+  padding: 2% 5%;
+  border: 1px #000033 solid;
+  border-radius: 30px;
+  width: 70%;
+}
+.contactDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contactDetails div {
+  width: 50%;
+}
+footer {
+  background-color: rgba(164, 120, 241, 0.724);
+  color: white;
+  padding: 10px 0 25px 0;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+footer p {
+  margin: 0;
+}
+footer hr {
+  width: 60%;
+}
